@@ -4,8 +4,9 @@
   "description": "todo list mern stack",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\" "
   },
   "author": "Dhanraj Pai Raiturkar",
   "license": "ISC",
